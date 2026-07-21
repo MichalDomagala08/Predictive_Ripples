@@ -19,6 +19,7 @@ preprocessed/**/*.mat
 data/**/*.mat
 data/**/*.FSAVERAGE
 data/**/*.jpeg
+data/**/*.jpg
 results/**/*.ps
 results/**/*.png
 results/**/*.pdf
