@@ -13,6 +13,8 @@
 
 # Other (Fieldtirp and Freesurfer)
 *.nii         
+*.jpg				
+*.png
 
 # Folders to ignore
 preprocessed/**/*.mat
