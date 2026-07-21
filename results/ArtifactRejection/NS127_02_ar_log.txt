@@ -1,0 +1,677 @@
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+(1) Spike Detection ...
+      RDh8-RDh9: 0 spikes
+      RDh9-RDh10: 0 spikes
+      RDh10-RDh11: 0 spikes
+      RDh11-RDh12: 0 spikes
+      RDh12-RDh13: 0 spikes
+      RDh13-RDh14: 0 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      RDh12-RDh13
+
+(3) Per-trial Artifact Rejection ...
+    For Channel RDh8-RDh9 
+        Channel IQR artifs (n.samples) : 251 
+        Channel Range artifs (n.events): 48 
+        Trial n. with artifacts        : 41 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 87.012500 
+    For Channel RDh9-RDh10 
+        Channel IQR artifs (n.samples) : 4016 
+        Channel Range artifs (n.events): 64 
+        Trial n. with artifacts        : 43 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 160.862500 
+    For Channel RDh10-RDh11 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 42 
+        Trial n. with artifacts        : 34 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 72.462500 
+    For Channel RDh11-RDh12 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 13 
+        Trial n. with artifacts        : 16 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 22.400000 
+    For Channel RDh12-RDh13 
+        Channel IQR artifs (n.samples) : 4518 
+        Channel Range artifs (n.events): 5 
+        Trial n. with artifacts        : 19 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 63.600000 
+    For Channel RDh13-RDh14 
+        Channel IQR artifs (n.samples) : 14558 
+        Channel Range artifs (n.events): 4 
+        Trial n. with artifacts        : 26 / 80 
+        Trials with long artifs (0.1)  : 12 / 80 
+        Average artif Length (samples) : 187.312500 
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+(1) Spike Detection ...
+      RDh8-RDh9: 0 spikes
+      RDh9-RDh10: 0 spikes
+      RDh10-RDh11: 0 spikes
+      RDh11-RDh12: 0 spikes
+      RDh12-RDh13: 0 spikes
+      RDh13-RDh14: 0 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      RDh12-RDh13
+
+(3) Per-trial Artifact Rejection ...
+    For Channel RDh8-RDh9 
+        Channel IQR artifs (n.samples) : 251 
+        Channel Range artifs (n.events): 48 
+        Trial n. with artifacts        : 41 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 87.012500 
+    For Channel RDh9-RDh10 
+        Channel IQR artifs (n.samples) : 4016 
+        Channel Range artifs (n.events): 64 
+        Trial n. with artifacts        : 43 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 160.862500 
+    For Channel RDh10-RDh11 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 42 
+        Trial n. with artifacts        : 34 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 72.462500 
+    For Channel RDh11-RDh12 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 13 
+        Trial n. with artifacts        : 16 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 22.400000 
+    For Channel RDh12-RDh13 
+        Channel IQR artifs (n.samples) : 4518 
+        Channel Range artifs (n.events): 5 
+        Trial n. with artifacts        : 19 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 63.600000 
+    For Channel RDh13-RDh14 
+        Channel IQR artifs (n.samples) : 14558 
+        Channel Range artifs (n.events): 4 
+        Trial n. with artifacts        : 26 / 80 
+        Trials with long artifs (0.1)  : 12 / 80 
+        Average artif Length (samples) : 187.312500 
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+% Select Rippleband channels only:   
+    goodChannels = [];
+    for i = 1:length(electrodeFields)
+        channel_string = T.(electrodeFields{i}){currSubjName};
+        if ~isempty(channel_string)
+            goodChannels = [goodChannels; split(channel_string,',')];
+        end
+    end
+if system_dependent('IsDebugMode')==1, dbquit; end
+% Electrode info
+T = readtable('D:\Documents_Dell\Predictive_Ripples_2025\data\Electrodes.xlsx','ReadRowNames',true, 'Sheet', 'responsive');
+if params.hipOnly
+    electrodeFields = {'antHP',	'postHP'};
+else
+    electrodeFields = {'ITC',	'Vx', 'antHP',	'postHP'};
+end
+ 
+    % Select Rippleband channels only:   
+    goodChannels = [];
+    for i = 1:length(electrodeFields)
+        channel_string = T.(electrodeFields{i}){currSubjName};
+        if ~isempty(channel_string)
+            goodChannels = [goodChannels; split(channel_string,',')];
+        end
+    end
+PR_1_artefact_rejection
+
+------------------------------------------
+   ==== Artifact Rejection ====
+------------------------------------------
+
+
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+    chanHipIdx = ismember(raw_data.label,final_goodChannels{iter});
+{Index exceeds the number of array elements. Index must not exceed 0.
+} 
+PR_1_artefact_rejection
+
+------------------------------------------
+   ==== Artifact Rejection ====
+------------------------------------------
+
+
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+    chanHipIdx = ismember(raw_data.label,goodChannels{iter});
+    chanHipIdx = ismember(raw_data.label,goodChannels{iter});
+setdiff(raw_data.label,goodChannels{iter})
+
+ans =
+
+  159×1 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {'RDa1-RDa2'  }
+    {'RDa2-RDa3'  }
+    {'RDa3-RDa4'  }
+    {'RDa4-RDa5'  }
+    {'RDa5-RDa6'  }
+    {'RDa6-RDa7'  }
+    {'RDa7-RDa8'  }
+    {'RDa8-RDa9'  }
+    {'RDa9-RDa10' }
+    {'RDh1-RDh2'  }
+    {'RDh12-RDh13'}
+    {'RDh13-RDh14'}
+    {'RDh14-RDh15'}
+    {'RDh15-RDh16'}
+    {'RDh2-RDh3'  }
+    {'RDh3-RDh4'  }
+    {'RDh4-RDh5'  }
+    {'RDh5-RDh6'  }
+    {'RDh6-RDh7'  }
+    {'RDh7-RDh8'  }
+    {'RDh8-RDh9'  }
+    {'RDh9-RDh10' }
+    {'RFa1-RFa2'  }
+    {'RFa10-RFa11'}
+    {'RFa11-RFa12'}
+    {'RFa12-RFa13'}
+    {'RFa13-RFa14'}
+    {'RFa14-RFa15'}
+    {'RFa2-RFa3'  }
+    {'RFa3-RFa4'  }
+    {'RFa4-RFa5'  }
+    {'RFa5-RFa6'  }
+    {'RFa6-RFa7'  }
+    {'RFa7-RFa8'  }
+    {'RFa8-RFa9'  }
+    {'RFa9-RFa10' }
+    {'RFi1-RFi2'  }
+    {'RFi10-RFi11'}
+    {'RFi11-RFi12'}
+    {'RFi12-RFi13'}
+    {'RFi13-RFi14'}
+    {'RFi14-RFi15'}
+    {'RFi15-RFi16'}
+    {'RFi2-RFi3'  }
+    {'RFi3-RFi4'  }
+    {'RFi4-RFi5'  }
+    {'RFi5-RFi6'  }
+    {'RFi6-RFi7'  }
+    {'RFi7-RFi8'  }
+    {'RFi8-RFi9'  }
+    {'RFi9-RFi10' }
+    {'RFo1-RFo2'  }
+    {'RFo10-RFo11'}
+    {'RFo11-RFo12'}
+    {'RFo12-RFo13'}
+    {'RFo13-RFo14'}
+    {'RFo14-RFo15'}
+    {'RFo2-RFo3'  }
+    {'RFo3-RFo4'  }
+    {'RFo4-RFo5'  }
+    {'RFo5-RFo6'  }
+    {'RFo6-RFo7'  }
+    {'RFo7-RFo8'  }
+    {'RFo8-RFo9'  }
+    {'RFo9-RFo10' }
+    {'RIa1-RIa2'  }
+    {'RIa10-RIa11'}
+    {'RIa11-RIa12'}
+    {'RIa12-RIa13'}
+    {'RIa13-RIa14'}
+    {'RIa14-RIa15'}
+    {'RIa15-RIa16'}
+    {'RIa2-RIa3'  }
+    {'RIa3-RIa4'  }
+    {'RIa4-RIa5'  }
+    {'RIa5-RIa6'  }
+    {'RIa6-RIa7'  }
+    {'RIa7-RIa8'  }
+    {'RIa8-RIa9'  }
+    {'RIa9-RIa10' }
+    {'RIp1-RIp2'  }
+    {'RIp10-RIp11'}
+    {'RIp11-RIp12'}
+    {'RIp12-RIp13'}
+    {'RIp13-RIp14'}
+    {'RIp14-RIp15'}
+    {'RIp15-RIp16'}
+    {'RIp2-RIp3'  }
+    {'RIp3-RIp4'  }
+    {'RIp4-RIp5'  }
+    {'RIp5-RIp6'  }
+    {'RIp6-RIp7'  }
+    {'RIp7-RIp8'  }
+    {'RIp8-RIp9'  }
+    {'RIp9-RIp10' }
+    {'RPc1-RPc2'  }
+    {'RPc10-RPc11'}
+    {'RPc11-RPc12'}
+    {'RPc12-RPc13'}
+    {'RPc13-RPc14'}
+    {'RPc14-RPc15'}
+    {'RPc2-RPc3'  }
+    {'RPc3-RPc4'  }
+    {'RPc4-RPc5'  }
+    {'RPc5-RPc6'  }
+    {'RPc6-RPc7'  }
+    {'RPc7-RPc8'  }
+    {'RPc8-RPc9'  }
+    {'RPc9-RPc10' }
+    {'RTi1-RTi2'  }
+    {'RTi2-RTi3'  }
+    {'RTi3-RTi4'  }
+    {'RTi4-RTi5'  }
+    {'RTi5-RTi6'  }
+    {'RTi6-RTi7'  }
+    {'RTi7-RTi8'  }
+    {'RTi8-RTi9'  }
+    {'RTi9-RTi10' }
+    {'RTp1-RTp2'  }
+    {'RTp10-RTp11'}
+    {'RTp11-RTp12'}
+    {'RTp12-RTp13'}
+    {'RTp13-RTp14'}
+    {'RTp2-RTp3'  }
+    {'RTp3-RTp4'  }
+    {'RTp4-RTp5'  }
+    {'RTp5-RTp6'  }
+    {'RTp6-RTp7'  }
+    {'RTp7-RTp8'  }
+    {'RTp8-RTp9'  }
+    {'RTp9-RTp10' }
+    {'RTs1-RTs2'  }
+    {'RTs10-RTs11'}
+    {'RTs11-RTs12'}
+    {'RTs12-RTs13'}
+    {'RTs13-RTs14'}
+    {'RTs14-RTs15'}
+    {'RTs15-RTs16'}
+    {'RTs2-RTs3'  }
+    {'RTs3-RTs4'  }
+    {'RTs4-RTs5'  }
+    {'RTs5-RTs6'  }
+    {'RTs6-RTs7'  }
+    {'RTs7-RTs8'  }
+    {'RTs8-RTs9'  }
+    {'RTs9-RTs10' }
+    {'RTx1-RTx2'  }
+    {'RTx10-RTx11'}
+    {'RTx11-RTx12'}
+    {'RTx12-RTx13'}
+    {'RTx13-RTx14'}
+    {'RTx2-RTx3'  }
+    {'RTx3-RTx4'  }
+    {'RTx4-RTx5'  }
+    {'RTx5-RTx6'  }
+    {'RTx6-RTx7'  }
+    {'RTx7-RTx8'  }
+    {'RTx8-RTx9'  }
+    {'RTx9-RTx10' }
+
+setdiff(goodChannels{iter},raw_data.label)
+
+ans =
+
+  3×1 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {0×0 char    }
+    {'RDH8-RDh9' }
+    {'RDH9-RDh10'}
+
+sprintf("%s",setdiff(goodChannels{iter},raw_data.label))
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sprintf')" style="font-weight:bold">sprintf</a>
+Function is not defined for 'cell' inputs.
+} 
+sprintf("%s",string(setdiff(goodChannels{iter},raw_data.label)))
+
+ans = 
+
+    "RDH8-RDh9RDH9-RDh10"
+
+sprintf("%s",strjoin(setdiff(goodChannels{iter},raw_data.label), ' ')))
+ sprintf("%s",strjoin(setdiff(goodChannels{iter},raw_data.label), ' ')))
+                                                                       ↑
+{Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
+} 
+sprintf("%s",strjoin(setdiff(goodChannels{iter},raw_data.label), ' '))
+
+ans = 
+
+    " RDH8-RDh9 RDH9-RDh10"
+
+PR_1_artefact_rejection
+
+------------------------------------------
+   ==== Artifact Rejection ====
+------------------------------------------
+
+
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+ sum(chanHipIdx)
+
+ans =
+
+     4
+
+ length(goodChannels{iter})
+
+ans =
+
+     5
+
+channel_strings = cellfun(@(f) T.(f){currSubjName}, electrodeFields, 'UniformOutput', false);
+channel_strings = channel_strings(~cellfun('isempty', channel_strings));  % usuń puste
+splits          = cellfun(@(s) split(s,','), channel_strings, 'UniformOutput', false);
+goodChannels{iter} = vertcat(splits{:});
+    
+    
+PR_1_artefact_rejection
+
+------------------------------------------
+   ==== Artifact Rejection ====
+------------------------------------------
+
+
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PR_1_artefact_rejection')" style="font-weight:bold">PR_1_artefact_rejection</a>
+A channel got lost in translationP
+} 
+PR_1_artefact_rejection
+
+------------------------------------------
+   ==== Artifact Rejection ====
+------------------------------------------
+
+
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PR_1_artefact_rejection')" style="font-weight:bold">PR_1_artefact_rejection</a>
+A channel got lost in translationP
+} 
+PR_1_artefact_rejection
+
+------------------------------------------
+   ==== Artifact Rejection ====
+------------------------------------------
+
+
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+IdleTimeout has been reached.
+Parallel pool using the 'Processes' profile is shutting down.
+clear goodChannels
+PR_1_artefact_rejection
+
+------------------------------------------
+   ==== Artifact Rejection ====
+------------------------------------------
+
+
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+PR_1_artefact_rejection
+
+------------------------------------------
+   ==== Artifact Rejection ====
+------------------------------------------
+
+
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+(1) Spike Detection ...
+{Unrecognized function or variable 'findSpikeTimes_reviewed'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('func_artifact_rejection_main', 'D:\Documents_Dell\Predictive_Ripples_2025\analysis_codes\functions\func_artifact_rejection_main.m', 64)" style="font-weight:bold">func_artifact_rejection_main</a> (<a href="matlab: opentoline('D:\Documents_Dell\Predictive_Ripples_2025\analysis_codes\functions\func_artifact_rejection_main.m',64,0)">line 64</a>)
+    mySingleton = findSpikeTimes_reviewed(ts,params.spikePeakWin,...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PR_1_artefact_rejection', 'D:\Documents_Dell\Predictive_Ripples_2025\analysis_codes\PR_1_artefact_rejection.m', 104)" style="font-weight:bold">PR_1_artefact_rejection</a> (<a href="matlab: opentoline('D:\Documents_Dell\Predictive_Ripples_2025\analysis_codes\PR_1_artefact_rejection.m',104,0)">line 104</a>)
+   [artifacts_byChan,ieds_byChan,iqr_byChan,range_byChan,data_artifact,ied_timestamps,badChans] =  func_artifact_rejection_main(raw_data,params);
+} 
+opentoline('D:\Documents_Dell\Predictive_Ripples_2025\analysis_codes\functions\func_artifact_rejection_main.m',64,0)
+opentoline('D:\Documents_Dell\Predictive_Ripples_2025\analysis_codes\functions\func_artifact_rejection_main.m',64,0)
+PR_1_artefact_rejection
+
+------------------------------------------
+   ==== Artifact Rejection ====
+------------------------------------------
+
+
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+(1) Spike Detection ...
+      RDh8-RDh9: 0 spikes
+      RDh9-RDh10: 0 spikes
+      RDh10-RDh11: 0 spikes
+      RDh11-RDh12: 0 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      RDh9-RDh10
+
+(3) Per-trial Artifact Rejection ...
+    For Channel RDh8-RDh9 
+        Channel IQR artifs (n.samples) : 251 
+        Channel Range artifs (n.events): 5 
+        Trial n. with artifacts        : 6 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 11.950000 
+    For Channel RDh9-RDh10 
+        Channel IQR artifs (n.samples) : 4016 
+        Channel Range artifs (n.events): 2 
+        Trial n. with artifacts        : 4 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 53.512500 
+    For Channel RDh10-RDh11 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 0 
+        Trial n. with artifacts        : 0 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 0.000000 
+    For Channel RDh11-RDh12 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 0 
+        Trial n. with artifacts        : 0 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 0.000000 
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+(1) Spike Detection ...
+      RDh8-RDh9: 0 spikes
+      RDh9-RDh10: 0 spikes
+      RDh10-RDh11: 0 spikes
+      RDh11-RDh12: 0 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+{Unrecognized function or variable 'badChans'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('func_artifact_rejection_main', 'D:\Documents_Dell\Predictive_Ripples_2025\analysis_codes\functions\func_artifact_rejection_main.m', 91)" style="font-weight:bold">func_artifact_rejection_main</a> (<a href="matlab: opentoline('D:\Documents_Dell\Predictive_Ripples_2025\analysis_codes\functions\func_artifact_rejection_main.m',91,0)">line 91</a>)
+    fprintf('      %s\n',string(data_norm.label(badChans)))
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PR_1_artefact_rejection', 'D:\Documents_Dell\Predictive_Ripples_2025\analysis_codes\PR_1_artefact_rejection.m', 104)" style="font-weight:bold">PR_1_artefact_rejection</a> (<a href="matlab: opentoline('D:\Documents_Dell\Predictive_Ripples_2025\analysis_codes\PR_1_artefact_rejection.m',104,0)">line 104</a>)
+   [artifacts_byChan,ieds_byChan,iqr_byChan,range_byChan,data_artifact,ied_timestamps] =  func_artifact_rejection_main(raw_data,params);
+} 
+opentoline('D:\Documents_Dell\Predictive_Ripples_2025\analysis_codes\functions\func_artifact_rejection_main.m',91,0)
+PR_1_artefact_rejection
+
+------------------------------------------
+   ==== Artifact Rejection ====
+------------------------------------------
+
+
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+(1) Spike Detection ...
+      RDh8-RDh9: 0 spikes
+      RDh9-RDh10: 0 spikes
+      RDh10-RDh11: 0 spikes
+      RDh11-RDh12: 0 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+    trialIQR_norm = (trialIQR - median(trialIQR,1)) ./ mad(trialIQR,1,1); % [chan × trials]
+    
+    % Dla każdego kanału — jaki był jego medianowy outlier score across trials?
+    chanOutlierScore = median(trialIQR_norm, 2); 
+
+    badTrialsMat = false(nChan, nTrials);
+{Unrecognized function or variable 'nChan'.
+} 
+ 
+    badTrialsMat = false(4, nTrials);
+{Unrecognized function or variable 'nTrials'.
+} 
+   badTrialsMat = false(4, 80);
+    for chan = 1:4
+        chanDist = trialIQR(chan, :);  % ten kanał, wszystkie triale
+        thresh = median(chanDist) + 3*mad(chanDist, 1);
+        badTrialsMat(chan, :) = chanDist > thresh;
+    end
+    
+    % Zły kanał = za dużo outlier triali NA TEN KANAŁ
+    chanBadFrac = mean(badTrialsMat, 2);
+    badChans = find(chanBadFrac > 0.3);
+PR_1_artefact_rejection
+
+------------------------------------------
+   ==== Artifact Rejection ====
+------------------------------------------
+
+
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+(1) Spike Detection ...
+      RDh8-RDh9: 0 spikes
+      RDh9-RDh10: 0 spikes
+      RDh10-RDh11: 0 spikes
+      RDh11-RDh12: 0 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      RDh9-RDh10 : 
+(3) Per-trial Artifact Rejection ...
+    For Channel RDh8-RDh9 
+        Channel IQR artifs (n.samples) : 251 
+        Channel Range artifs (n.events): 5 
+        Trial n. with artifacts        : 6 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 11.950000 
+    For Channel RDh9-RDh10 
+        Channel IQR artifs (n.samples) : 4016 
+        Channel Range artifs (n.events): 2 
+        Trial n. with artifacts        : 4 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 53.512500 
+    For Channel RDh10-RDh11 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 0 
+        Trial n. with artifacts        : 0 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 0.000000 
+    For Channel RDh11-RDh12 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 0 
+        Trial n. with artifacts        : 0 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 0.000000 
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+(1) Spike Detection ...
+      RDh8-RDh9: 0 spikes
+      RDh9-RDh10: 0 spikes
+      RDh10-RDh11: 0 spikes
+      RDh11-RDh12: 0 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      RDh9-RDh10 : 
+(3) Per-trial Artifact Rejection ...
+    For Channel RDh8-RDh9 
+        Channel IQR artifs (n.samples) : 251 
+        Channel Range artifs (n.events): 5 
+        Trial n. with artifacts        : 6 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 11.950000 
+    For Channel RDh9-RDh10 
+        Channel IQR artifs (n.samples) : 4016 
+        Channel Range artifs (n.events): 2 
+        Trial n. with artifacts        : 4 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 53.512500 
+    For Channel RDh10-RDh11 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 0 
+        Trial n. with artifacts        : 0 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 0.000000 
+    For Channel RDh11-RDh12 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 0 
+        Trial n. with artifacts        : 0 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 0.000000 
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+(1) Spike Detection ...
+      RDh8-RDh9: 0 spikes
+      RDh9-RDh10: 0 spikes
+      RDh10-RDh11: 0 spikes
+      RDh11-RDh12: 0 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      RDh9-RDh10 : 
+(3) Per-trial Artifact Rejection ...
+(3.1) NGO Spike Detection ...
+        Channel NGO artifs (n.samples) : 19 
+    For Channel RDh8-RDh9 
+        Channel IQR artifs (n.samples) : 251 
+        Channel Range artifs (n.events): 11 
+        Trial n. with artifacts        : 13 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 22.762500 
+(3.1) NGO Spike Detection ...
+        Channel NGO artifs (n.samples) : 25 
+    For Channel RDh9-RDh10 
+        Channel IQR artifs (n.samples) : 4016 
+        Channel Range artifs (n.events): 10 
+        Trial n. with artifacts        : 10 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 67.800000 
+(3.1) NGO Spike Detection ...
+        Channel NGO artifs (n.samples) : 15 
+    For Channel RDh10-RDh11 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 5 
+        Trial n. with artifacts        : 5 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 8.812500 
+(3.1) NGO Spike Detection ...
+        Channel NGO artifs (n.samples) : 10 
+    For Channel RDh11-RDh12 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 2 
+        Trial n. with artifacts        : 3 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 3.387500 

@@ -1,0 +1,35 @@
+--------------------------------------------------------
+CURRENT SUBJECT: NS135 
+
+(1) Spike Detection ...
+      RDa2-RDa3: 18 spikes
+      LDa2-LDa3: 20 spikes
+      LDa3-LDa4: 23 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+       : 
+(3) Per-trial Artifact Rejection ...
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 608 
+    For Channel RDa2-RDa3 
+        Channel IQR artifs (n.samples) : 251 
+        Channel Range artifs (n.events): 128 
+        Trial n. with artifacts        : 62 / 80 
+        Trials with long artifs (0.1)  : 16 / 80 
+        Average artif Length (samples) : 348.737500 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 877 
+    For Channel LDa2-LDa3 
+        Channel IQR artifs (n.samples) : 502 
+        Channel Range artifs (n.events): 177 
+        Trial n. with artifacts        : 59 / 80 
+        Trials with long artifs (0.1)  : 21 / 80 
+        Average artif Length (samples) : 395.012500 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 2872 
+    For Channel LDa3-LDa4 
+        Channel IQR artifs (n.samples) : 80 
+        Channel Range artifs (n.events): 221 
+        Trial n. with artifacts        : 58 / 80 
+        Trials with long artifs (0.1)  : 22 / 80 
+        Average artif Length (samples) : 443.075000 

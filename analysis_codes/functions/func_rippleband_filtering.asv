@@ -1,0 +1,27 @@
+function [data_bha,data_viz] = func_rippleband_filtering(dataForPreproc,data_bha,data_viz)
+    % This function is utilised for filtering in ripple range (or any specified) and computing Envelope WITH Hilbert Transform:
+
+
+    % Mirror the signal in both ways:
+
+    for trial = 1:length(dataForPreproc.trial)
+
+        currentTrial = dataForPreproc.trial{trial};
+        trial_t = zeros(size(currentTrial));
+
+        currentTrial = [currentTrial(:, end:-1:1), currentTrial, currentTrial(:, end:-1:1)];;
+
+        for Currchannel = 1:size(dataForPreproc,1)
+            % Using BandPass Fieldtrip twopass FIR filter for Every Channel
+            swr_range = ft_preproc_bandpassfilter(currentTrial(Currchannel,:),fsample ,[params.lowpassfreq,params.highpassfreq],[],'fir','twopass');
+            hilbertComp = abs(hilbert(swr_range)).^2; % computing abs.^2 from Hilber transform
+
+
+            trial_t(Currchannel,:) = hilbertComp(7001:14001);
+            
+        end
+        data_bha.trial{trial}(Currchannel,:) = trial_t;
+            data_viz.trial{trial} (Currchannel,:) = swr_range;   % Save Non-hilber data for visualization
+
+    end
+end

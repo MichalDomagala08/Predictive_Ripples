@@ -1,0 +1,70 @@
+--------------------------------------------------------
+CURRENT SUBJECT: NS173 
+
+(1) Spike Detection ...
+      LDh1-LDh2: 66 spikes
+      LDh2-LDh3: 115 spikes
+      LDh3-LDh4: 36 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      LDh1-LDh2 : 
+(3) Per-trial Artifact Rejection ...
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 2836 
+    For Channel LDh1-LDh2 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 256 
+        Trial n. with artifacts        : 80 / 80 
+        Trials with long artifs (0.1)  : 22 / 80 
+        Average artif Length (samples) : 566.037500 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 1499 
+    For Channel LDh2-LDh3 
+        Channel IQR artifs (n.samples) : 502 
+        Channel Range artifs (n.events): 248 
+        Trial n. with artifacts        : 80 / 80 
+        Trials with long artifs (0.1)  : 21 / 80 
+        Average artif Length (samples) : 569.475000 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 1191 
+    For Channel LDh3-LDh4 
+        Channel IQR artifs (n.samples) : 502 
+        Channel Range artifs (n.events): 44 
+        Trial n. with artifacts        : 23 / 80 
+        Trials with long artifs (0.1)  : 9 / 80 
+        Average artif Length (samples) : 195.950000 
+--------------------------------------------------------
+CURRENT SUBJECT: NS173 
+
+(1) Spike Detection ...
+      LDh1-LDh2: 66 spikes
+      LDh2-LDh3: 115 spikes
+      LDh3-LDh4: 36 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      LDh1-LDh2 : 
+(3) Per-trial Artifact Rejection ...
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 2836 
+    For Channel LDh1-LDh2 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 256 
+        Trial n. with artifacts        : 80 / 80 
+        Trials with long artifs (0.1)  : 22 / 80 
+        Average artif Length (samples) : 566.037500 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 1499 
+    For Channel LDh2-LDh3 
+        Channel IQR artifs (n.samples) : 502 
+        Channel Range artifs (n.events): 248 
+        Trial n. with artifacts        : 80 / 80 
+        Trials with long artifs (0.1)  : 21 / 80 
+        Average artif Length (samples) : 569.475000 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 1191 
+    For Channel LDh3-LDh4 
+        Channel IQR artifs (n.samples) : 502 
+        Channel Range artifs (n.events): 44 
+        Trial n. with artifacts        : 23 / 80 
+        Trials with long artifs (0.1)  : 9 / 80 
+        Average artif Length (samples) : 195.950000 

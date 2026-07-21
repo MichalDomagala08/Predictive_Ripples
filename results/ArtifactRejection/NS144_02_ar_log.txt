@@ -1,0 +1,73 @@
+--------------------------------------------------------
+CURRENT SUBJECT: NS144_02 
+
+(1) Spike Detection ...
+      LDa1-LDa2: 33 spikes
+      LDa2-LDa3: 74 spikes
+      LDa3-LDa4: 94 spikes
+      LDa4-LDa5: 0 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      LDa4-LDa5
+
+(3) Per-trial Artifact Rejection ...
+    For Channel LDa1-LDa2 
+        Channel IQR artifs (n.samples) : 10040 
+        Channel Range artifs (n.events): 119 
+        Trial n. with artifacts        : 50 / 80 
+        Trials with long artifs (0.1)  : 11 / 80 
+        Average artif Length (samples) : 309.537500 
+    For Channel LDa2-LDa3 
+        Channel IQR artifs (n.samples) : 14056 
+        Channel Range artifs (n.events): 153 
+        Trial n. with artifacts        : 59 / 80 
+        Trials with long artifs (0.1)  : 15 / 80 
+        Average artif Length (samples) : 395.212500 
+    For Channel LDa3-LDa4 
+        Channel IQR artifs (n.samples) : 10542 
+        Channel Range artifs (n.events): 140 
+        Trial n. with artifacts        : 53 / 80 
+        Trials with long artifs (0.1)  : 13 / 80 
+        Average artif Length (samples) : 326.725000 
+    For Channel LDa4-LDa5 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 43 
+        Trial n. with artifacts        : 35 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 75.675000 
+--------------------------------------------------------
+CURRENT SUBJECT: NS144_02 
+
+(1) Spike Detection ...
+      LDa1-LDa2: 33 spikes
+      LDa2-LDa3: 74 spikes
+      LDa3-LDa4: 94 spikes
+      LDa4-LDa5: 0 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      LDa4-LDa5 : 
+(3) Per-trial Artifact Rejection ...
+    For Channel LDa1-LDa2 
+        Channel IQR artifs (n.samples) : 10040 
+        Channel Range artifs (n.events): 121 
+        Trial n. with artifacts        : 50 / 80 
+        Trials with long artifs (0.1)  : 11 / 80 
+        Average artif Length (samples) : 312.287500 
+    For Channel LDa2-LDa3 
+        Channel IQR artifs (n.samples) : 14056 
+        Channel Range artifs (n.events): 154 
+        Trial n. with artifacts        : 59 / 80 
+        Trials with long artifs (0.1)  : 15 / 80 
+        Average artif Length (samples) : 397.000000 
+    For Channel LDa3-LDa4 
+        Channel IQR artifs (n.samples) : 10542 
+        Channel Range artifs (n.events): 143 
+        Trial n. with artifacts        : 55 / 80 
+        Trials with long artifs (0.1)  : 13 / 80 
+        Average artif Length (samples) : 332.762500 
+    For Channel LDa4-LDa5 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 37 
+        Trial n. with artifacts        : 28 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 65.612500 

@@ -1,0 +1,262 @@
+--------------------------------------------------------
+CURRENT SUBJECT: NS153 
+
+(1) Spike Detection ...
+      LDh2-LDh3: 0 spikes
+      LDh3-LDh4: 2 spikes
+      LDh4-LDh5: 4 spikes
+      RDa2-RDa3: 16 spikes
+      RDa3-RDa4: 9 spikes
+      RDa4-RDa5: 11 spikes
+      RDa5-RDa6: 0 spikes
+      RDa6-RDa7: 37 spikes
+      RDh3-RDh4: 4 spikes
+      RDh4-RDh5: 32 spikes
+      RDh5-RDh6: 17 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      
+
+(3) Per-trial Artifact Rejection ...
+    For Channel LDh2-LDh3 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 17 
+        Trial n. with artifacts        : 22 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 118.800000 
+    For Channel LDh3-LDh4 
+        Channel IQR artifs (n.samples) : 2761 
+        Channel Range artifs (n.events): 30 
+        Trial n. with artifacts        : 31 / 80 
+        Trials with long artifs (0.1)  : 4 / 80 
+        Average artif Length (samples) : 174.325000 
+    For Channel LDh4-LDh5 
+        Channel IQR artifs (n.samples) : 1506 
+        Channel Range artifs (n.events): 24 
+        Trial n. with artifacts        : 34 / 80 
+        Trials with long artifs (0.1)  : 2 / 80 
+        Average artif Length (samples) : 147.225000 
+    For Channel RDa2-RDa3 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 41 
+        Trial n. with artifacts        : 45 / 80 
+        Trials with long artifs (0.1)  : 3 / 80 
+        Average artif Length (samples) : 151.387500 
+    For Channel RDa3-RDa4 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 31 
+        Trial n. with artifacts        : 32 / 80 
+        Trials with long artifs (0.1)  : 2 / 80 
+        Average artif Length (samples) : 134.112500 
+    For Channel RDa4-RDa5 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 48 
+        Trial n. with artifacts        : 30 / 80 
+        Trials with long artifs (0.1)  : 5 / 80 
+        Average artif Length (samples) : 158.537500 
+    For Channel RDa5-RDa6 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 17 
+        Trial n. with artifacts        : 24 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 110.475000 
+    For Channel RDa6-RDa7 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 27 
+        Trial n. with artifacts        : 30 / 80 
+        Trials with long artifs (0.1)  : 2 / 80 
+        Average artif Length (samples) : 126.575000 
+    For Channel RDh3-RDh4 
+        Channel IQR artifs (n.samples) : 502 
+        Channel Range artifs (n.events): 49 
+        Trial n. with artifacts        : 35 / 80 
+        Trials with long artifs (0.1)  : 6 / 80 
+        Average artif Length (samples) : 163.325000 
+    For Channel RDh4-RDh5 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 16 
+        Trial n. with artifacts        : 21 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 111.025000 
+    For Channel RDh5-RDh6 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 41 
+        Trial n. with artifacts        : 35 / 80 
+        Trials with long artifs (0.1)  : 3 / 80 
+        Average artif Length (samples) : 152.675000 
+--------------------------------------------------------
+CURRENT SUBJECT: NS153 
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PR_1_artefact_rejection')" style="font-weight:bold">PR_1_artefact_rejection</a>
+A channel got lost in translationP RDa5- RDa6
+} 
+iter
+
+iter =
+
+    15
+
+PR_1_artefact_rejection
+
+------------------------------------------
+   ==== Artifact Rejection ====
+------------------------------------------
+
+
+--------------------------------------------------------
+CURRENT SUBJECT: NS153 
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PR_1_artefact_rejection')" style="font-weight:bold">PR_1_artefact_rejection</a>
+A channel got lost in translationP RDa5- RDa6
+} 
+PR_1_artefact_rejection
+
+------------------------------------------
+   ==== Artifact Rejection ====
+------------------------------------------
+
+
+--------------------------------------------------------
+CURRENT SUBJECT: NS153 
+
+(1) Spike Detection ...
+      LDh3-LDh4: 2 spikes
+      LDh4-LDh5: 4 spikes
+      RDa2-RDa3: 16 spikes
+      RDa3-RDa4: 9 spikes
+      RDa4-RDa5: 11 spikes
+      RDa5-RDa6: 0 spikes
+      RDa6-RDa7: 37 spikes
+      RDh4-RDh5: 32 spikes
+      RDh5-RDh6: 17 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      LDh4-LDh5 : 
+(3) Per-trial Artifact Rejection ...
+    For Channel LDh3-LDh4 
+        Channel IQR artifs (n.samples) : 2761 
+        Channel Range artifs (n.events): 8 
+        Trial n. with artifacts        : 16 / 80 
+        Trials with long artifs (0.1)  : 3 / 80 
+        Average artif Length (samples) : 136.262500 
+    For Channel LDh4-LDh5 
+        Channel IQR artifs (n.samples) : 1506 
+        Channel Range artifs (n.events): 3 
+        Trial n. with artifacts        : 15 / 80 
+        Trials with long artifs (0.1)  : 2 / 80 
+        Average artif Length (samples) : 111.162500 
+    For Channel RDa2-RDa3 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 31 
+        Trial n. with artifacts        : 40 / 80 
+        Trials with long artifs (0.1)  : 2 / 80 
+        Average artif Length (samples) : 134.937500 
+    For Channel RDa3-RDa4 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 7 
+        Trial n. with artifacts        : 13 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 90.950000 
+    For Channel RDa4-RDa5 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 7 
+        Trial n. with artifacts        : 13 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 90.862500 
+    For Channel RDa5-RDa6 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 5 
+        Trial n. with artifacts        : 13 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 90.737500 
+    For Channel RDa6-RDa7 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 4 
+        Trial n. with artifacts        : 12 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 88.962500 
+    For Channel RDh4-RDh5 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 7 
+        Trial n. with artifacts        : 15 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 94.300000 
+    For Channel RDh5-RDh6 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 4 
+        Trial n. with artifacts        : 12 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 88.125000 
+--------------------------------------------------------
+CURRENT SUBJECT: NS153 
+
+(1) Spike Detection ...
+      LDh3-LDh4: 2 spikes
+      LDh4-LDh5: 4 spikes
+      RDa2-RDa3: 16 spikes
+      RDa3-RDa4: 9 spikes
+      RDa4-RDa5: 11 spikes
+      RDa5-RDa6: 0 spikes
+      RDa6-RDa7: 37 spikes
+      RDh4-RDh5: 32 spikes
+      RDh5-RDh6: 17 spikes
+if system_dependent('IsDebugMode')==1, dbcont; end
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      LDh4-LDh5 : 
+(3) Per-trial Artifact Rejection ...
+if system_dependent('IsDebugMode')==1, dbcont; end
+    For Channel LDh3-LDh4 
+        Channel IQR artifs (n.samples) : 2761 
+        Channel Range artifs (n.events): 9 
+        Trial n. with artifacts        : 49 / 80 
+        Trials with long artifs (0.1)  : 4 / 80 
+        Average artif Length (samples) : 164.575000 
+    For Channel LDh4-LDh5 
+        Channel IQR artifs (n.samples) : 1506 
+        Channel Range artifs (n.events): 6 
+        Trial n. with artifacts        : 80 / 80 
+        Trials with long artifs (0.1)  : 80 / 80 
+        Average artif Length (samples) : 6790.275000 
+    For Channel RDa2-RDa3 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 53 
+        Trial n. with artifacts        : 50 / 80 
+        Trials with long artifs (0.1)  : 4 / 80 
+        Average artif Length (samples) : 173.087500 
+    For Channel RDa3-RDa4 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 16 
+        Trial n. with artifacts        : 21 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 106.762500 
+    For Channel RDa4-RDa5 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 13 
+        Trial n. with artifacts        : 16 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 100.575000 
+    For Channel RDa5-RDa6 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 10 
+        Trial n. with artifacts        : 15 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 97.912500 
+    For Channel RDa6-RDa7 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 4 
+        Trial n. with artifacts        : 12 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 88.962500 
+    For Channel RDh4-RDh5 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 9 
+        Trial n. with artifacts        : 17 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 98.037500 
+    For Channel RDh5-RDh6 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 4 
+        Trial n. with artifacts        : 80 / 80 
+        Trials with long artifs (0.1)  : 80 / 80 
+        Average artif Length (samples) : 6248.600000 

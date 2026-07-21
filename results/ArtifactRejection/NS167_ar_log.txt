@@ -1,0 +1,59 @@
+--------------------------------------------------------
+CURRENT SUBJECT: NS167 
+
+(1) Spike Detection ...
+      LDa1-LDa2: 0 spikes
+      LDa2-LDa3: 11 spikes
+      LDa3-LDa4: 26 spikes
+      LDa4-LDa5: 6 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      LDa2-LDa3
+
+(3) Per-trial Artifact Rejection ...
+    For Channel LDa1-LDa2 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 16 
+        Trial n. with artifacts        : 17 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 65.812500 
+    For Channel LDa2-LDa3 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 1 
+        Trial n. with artifacts        : 7 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 41.812500 
+    For Channel LDa3-LDa4 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 1 
+        Trial n. with artifacts        : 7 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 41.812500 
+    For Channel LDa4-LDa5 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 33 
+        Trial n. with artifacts        : 31 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 91.537500 
+--------------------------------------------------------
+CURRENT SUBJECT: NS167 
+
+(1) Spike Detection ...
+      LDa1-LDa2: 0 spikes
+      LDa3-LDa4: 26 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+       : 
+(3) Per-trial Artifact Rejection ...
+    For Channel LDa1-LDa2 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 0 
+        Trial n. with artifacts        : 1 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 8.600000 
+    For Channel LDa3-LDa4 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 1 
+        Trial n. with artifacts        : 1 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 8.600000 

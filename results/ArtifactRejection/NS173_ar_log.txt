@@ -1,0 +1,59 @@
+--------------------------------------------------------
+CURRENT SUBJECT: NS173 
+
+(1) Spike Detection ...
+      LDh1-LDh2: 66 spikes
+      LDh2-LDh3: 115 spikes
+      LDh3-LDh4: 36 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      LDh1-LDh2
+
+(3) Per-trial Artifact Rejection ...
+    For Channel LDh1-LDh2 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 208 
+        Trial n. with artifacts        : 79 / 80 
+        Trials with long artifs (0.1)  : 20 / 80 
+        Average artif Length (samples) : 487.750000 
+    For Channel LDh2-LDh3 
+        Channel IQR artifs (n.samples) : 502 
+        Channel Range artifs (n.events): 213 
+        Trial n. with artifacts        : 80 / 80 
+        Trials with long artifs (0.1)  : 20 / 80 
+        Average artif Length (samples) : 526.912500 
+    For Channel LDh3-LDh4 
+        Channel IQR artifs (n.samples) : 502 
+        Channel Range artifs (n.events): 31 
+        Trial n. with artifacts        : 22 / 80 
+        Trials with long artifs (0.1)  : 8 / 80 
+        Average artif Length (samples) : 183.012500 
+--------------------------------------------------------
+CURRENT SUBJECT: NS173 
+
+(1) Spike Detection ...
+      LDh1-LDh2: 66 spikes
+      LDh2-LDh3: 115 spikes
+      LDh3-LDh4: 36 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      LDh1-LDh2 : 
+(3) Per-trial Artifact Rejection ...
+    For Channel LDh1-LDh2 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 210 
+        Trial n. with artifacts        : 79 / 80 
+        Trials with long artifs (0.1)  : 20 / 80 
+        Average artif Length (samples) : 494.887500 
+    For Channel LDh2-LDh3 
+        Channel IQR artifs (n.samples) : 502 
+        Channel Range artifs (n.events): 214 
+        Trial n. with artifacts        : 80 / 80 
+        Trials with long artifs (0.1)  : 20 / 80 
+        Average artif Length (samples) : 531.200000 
+    For Channel LDh3-LDh4 
+        Channel IQR artifs (n.samples) : 502 
+        Channel Range artifs (n.events): 31 
+        Trial n. with artifacts        : 22 / 80 
+        Trials with long artifs (0.1)  : 8 / 80 
+        Average artif Length (samples) : 183.012500 

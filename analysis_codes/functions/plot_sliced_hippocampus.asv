@@ -1,0 +1,107 @@
+ft_defaults
+
+ftdir = fileparts(which('ft_defaults'));
+
+mri = ft_read_mri(fullfile(ftdir,...
+    'template','anatomy','single_subj_T1_1mm.nii'));
+
+aal = ft_read_atlas(fullfile(ftdir,...
+    'template','atlas','aal','ROI_MNI_V4.nii'));
+
+
+% Create A  hippocampus Mask:
+cfg = [];
+cfg.atlas = aal;
+cfg.roi = {'Hippocampus_L','Hippocampus_R'};
+cfg.inputcoord = 'mni';
+
+hippo = ft_volumelookup(cfg,aal); % Looks for specific volume
+
+hippoVol = aal;
+
+hippoVol.tissue = hippo;
+hippoVol.dim = size(hippo);
+
+
+% Resmaple to MRI
+cfg = [];
+cfg.parameter = 'tissue';
+cfg.interpmethod = 'nearest';
+
+hippoMRI = ft_sourceinterpolate(cfg,hippoVol,mri);
+
+size(hippoMRI.tissue)
+size(mri.anatomy)
+
+
+% Chosen Electrode for now:
+coords = [44.9696540000000,	3.91454700000000,	-10.9538410000000];
+
+
+vox = ft_warp_apply(inv(mri.transform),coords,'homogeneous'); % Transfrom all to MNI coordinates
+
+vox = round(vox);
+
+%%% Extract Slices:
+
+% Axial
+MRI_ax = squeeze(mri.anatomy(:,:,vox(3)));
+HIP_ax = squeeze(hippoMRI(:,:,vox(3)));
+
+%Coronal
+MRI_cor = squeeze(mri.anatomy(:,vox(2),:));
+HIP_cor = squeeze(hippoMRI(:,vox(2),:));
+
+% Sagital
+MRI_sag = squeeze(mri.anatomy(vox(1),:,:));
+HIP_sag = squeeze(hippoMRI(vox(1),:,:));
+
+figure('Color','w','Position',[100 100 1400 450])
+
+
+%% AXIAL
+subplot(1,3,1)
+
+imagesc(rot90(MRI_ax))
+colormap gray
+axis image off
+hold on
+
+contour(rot90(HIP_ax),[1 1],'r','LineWidth',2)
+
+plot(size(MRI_ax,2)-vox(2),vox(1),...
+    'bo','MarkerFaceColor','b','MarkerSize',10)
+
+title('Axial')
+
+
+%% CORONAL
+subplot(1,3,2)
+
+imagesc(rot90(MRI_cor))
+colormap gray
+axis image off
+hold on
+
+contour(rot90(HIP_cor),[1 1],'r','LineWidth',2)
+
+plot(size(MRI_cor,2)-vox(3),vox(1),...
+    'bo','MarkerFaceColor','b','MarkerSize',10)
+
+title('Coronal')
+
+
+%% SAGITTAL
+subplot(1,3,3)
+
+imagesc(rot90(MRI_sag))
+colormap gray
+axis image off
+hold on
+
+contour(rot90(HIP_sag),[1 1],'r','LineWidth',2)
+
+plot(size(MRI_sag,2)-vox(3),vox(2),...
+    'bo','MarkerFaceColor','b','MarkerSize',10)
+
+title('Sagittal')

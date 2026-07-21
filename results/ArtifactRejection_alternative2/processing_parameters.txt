@@ -1,0 +1,13 @@
+hipOnly	1
+spikeCtsThresh	1
+spikePeakWin	1
+spikeZThresh	1
+spikeAmpScale	1
+spikeMNegPeakW	1
+spikeTrackPeaks	0
+spikeWindow	1
+artPadding	1
+cluster_tolerance	1
+range_threshold	1
+iqr_w	1
+artif_mad	1

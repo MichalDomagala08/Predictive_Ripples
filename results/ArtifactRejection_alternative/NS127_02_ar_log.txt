@@ -1,0 +1,176 @@
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+(1) Spike Detection ...
+      RDh8-RDh9: 0 spikes
+      RDh9-RDh10: 0 spikes
+      RDh10-RDh11: 0 spikes
+      RDh11-RDh12: 0 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      RDh9-RDh10 : 
+(3) Per-trial Artifact Rejection ...
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 10 
+    For Channel RDh8-RDh9 
+        Channel IQR artifs (n.samples) : 251 
+        Channel Range artifs (n.events): 12 
+        Trial n. with artifacts        : 12 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 22.950000 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 379 
+    For Channel RDh9-RDh10 
+        Channel IQR artifs (n.samples) : 4016 
+        Channel Range artifs (n.events): 27 
+        Trial n. with artifacts        : 10 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 71.475000 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 0 
+    For Channel RDh10-RDh11 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 5 
+        Trial n. with artifacts        : 5 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 8.812500 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 0 
+    For Channel RDh11-RDh12 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 2 
+        Trial n. with artifacts        : 3 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 3.387500 
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+(1) Spike Detection ...
+      RDh8-RDh9: 0 spikes
+      RDh9-RDh10: 0 spikes
+      RDh10-RDh11: 0 spikes
+      RDh11-RDh12: 0 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      RDh9-RDh10 : 
+(3) Per-trial Artifact Rejection ...
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 10 
+    For Channel RDh8-RDh9 
+        Channel IQR artifs (n.samples) : 251 
+        Channel Range artifs (n.events): 12 
+        Trial n. with artifacts        : 12 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 22.950000 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 379 
+    For Channel RDh9-RDh10 
+        Channel IQR artifs (n.samples) : 4016 
+        Channel Range artifs (n.events): 27 
+        Trial n. with artifacts        : 10 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 71.475000 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 0 
+    For Channel RDh10-RDh11 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 5 
+        Trial n. with artifacts        : 5 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 8.812500 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 0 
+    For Channel RDh11-RDh12 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 2 
+        Trial n. with artifacts        : 3 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 3.387500 
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+(1) Spike Detection ...
+      RDh8-RDh9: 0 spikes
+      RDh9-RDh10: 0 spikes
+      RDh10-RDh11: 0 spikes
+      RDh11-RDh12: 0 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      RDh9-RDh10 : 
+(3) Per-trial Artifact Rejection ...
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 10 
+    For Channel RDh8-RDh9 
+        Channel IQR artifs (n.samples) : 251 
+        Channel Range artifs (n.events): 12 
+        Trial n. with artifacts        : 12 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 22.950000 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 379 
+    For Channel RDh9-RDh10 
+        Channel IQR artifs (n.samples) : 4016 
+        Channel Range artifs (n.events): 27 
+        Trial n. with artifacts        : 10 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 71.475000 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 0 
+    For Channel RDh10-RDh11 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 5 
+        Trial n. with artifacts        : 5 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 8.812500 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 0 
+    For Channel RDh11-RDh12 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 2 
+        Trial n. with artifacts        : 3 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 3.387500 
+--------------------------------------------------------
+CURRENT SUBJECT: NS127_02 
+
+(1) Spike Detection ...
+      RDh8-RDh9: 0 spikes
+      RDh9-RDh10: 0 spikes
+      RDh10-RDh11: 0 spikes
+      RDh11-RDh12: 0 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      RDh9-RDh10 : 
+(3) Per-trial Artifact Rejection ...
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 10 
+    For Channel RDh8-RDh9 
+        Channel IQR artifs (n.samples) : 251 
+        Channel Range artifs (n.events): 12 
+        Trial n. with artifacts        : 12 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 22.950000 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 379 
+    For Channel RDh9-RDh10 
+        Channel IQR artifs (n.samples) : 4016 
+        Channel Range artifs (n.events): 27 
+        Trial n. with artifacts        : 10 / 80 
+        Trials with long artifs (0.1)  : 1 / 80 
+        Average artif Length (samples) : 71.475000 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 0 
+    For Channel RDh10-RDh11 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 5 
+        Trial n. with artifacts        : 5 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 8.812500 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 0 
+    For Channel RDh11-RDh12 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 2 
+        Trial n. with artifacts        : 3 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 3.387500 

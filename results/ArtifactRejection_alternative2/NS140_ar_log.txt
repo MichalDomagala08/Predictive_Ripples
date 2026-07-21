@@ -1,0 +1,107 @@
+--------------------------------------------------------
+CURRENT SUBJECT: NS140 
+
+(1) Spike Detection ...
+      RDa1-RDa2: 25 spikes
+      RDa2-RDa3: 3 spikes
+      RDa3-RDa4: 0 spikes
+      RDh1-RDh2: 0 spikes
+      RDh2-RDh3: 0 spikes
+      RDh5-RDh6: 0 spikes
+      LDa4-LDa5: 0 spikes
+      LDa5-LDa6: 0 spikes
+      LDa6-LDa7: 0 spikes
+      LDa7-LDa8: 0 spikes
+      LDa8-LDa9: 0 spikes
+
+(2) Bad Channel IQR detection ...  Noisy Channels (IQR):
+      LDa7-LDa8 : 
+(3) Per-trial Artifact Rejection ...
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 1069 
+    For Channel RDa1-RDa2 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 54 
+        Trial n. with artifacts        : 26 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 83.600000 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 874 
+    For Channel RDa2-RDa3 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 39 
+        Trial n. with artifacts        : 31 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 80.050000 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 103 
+    For Channel RDa3-RDa4 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 22 
+        Trial n. with artifacts        : 19 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 41.100000 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 2 
+    For Channel RDh1-RDh2 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 6 
+        Trial n. with artifacts        : 6 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 10.587500 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 0 
+    For Channel RDh2-RDh3 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 0 
+        Trial n. with artifacts        : 0 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 0.000000 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 40 
+    For Channel RDh5-RDh6 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 14 
+        Trial n. with artifacts        : 24 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 23.575000 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 25 
+    For Channel LDa4-LDa5 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 4 
+        Trial n. with artifacts        : 7 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 6.962500 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 39 
+    For Channel LDa5-LDa6 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 9 
+        Trial n. with artifacts        : 9 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 16.237500 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 33 
+    For Channel LDa6-LDa7 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 5 
+        Trial n. with artifacts        : 5 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 9.200000 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 68 
+    For Channel LDa7-LDa8 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 9 
+        Trial n. with artifacts        : 10 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 16.512500 
+(3.2) MAD Spike Detection ...
+        Channel MAD artifs (n.samples) : 16 
+    For Channel LDa8-LDa9 
+        Channel IQR artifs (n.samples) : 0 
+        Channel Range artifs (n.events): 5 
+        Trial n. with artifacts        : 5 / 80 
+        Trials with long artifs (0.1)  : 0 / 80 
+        Average artif Length (samples) : 9.000000 
