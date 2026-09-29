@@ -20,12 +20,12 @@ params.hipOnly = true;
 
 %%% Spike Detection Parameters %%%
 params.spikeCtsThresh  = 2;      % Zawsze 1 na czas debugowania!
-params.spikePeakWin    = 0.3;   % Zwiększ okno dopasowania (hp) do 150ms
-params.spikeZThresh    = 4;    % Obniż próg (z-score na dużych danych rzadko dobija do 4 dla rozlazłych fal)
-params.spikeAmpScale   = 2.5;    % Obniż sumaryczny wymóg Peak-to-Trough
-params.spikeMNegPeakW  = 150;    % KLUCZ: Pozwól negatywnej fazie trwać do 300ms
-params.spikeTrackPeaks = false;   % Szukaj od pozytywnego (tak jak na Twoim obrazku)
-params.spikeWindow     = 250;    % Zwiększ margines wycinania artefaktu wokół IED
+params.spikePeakWin    = 0.3;   % okno dopasowania
+params.spikeZThresh    = 4;    % próg z-score który musi przekroczyc peak
+params.spikeAmpScale   = 2.5;    %  sumaryczny wymóg Peak-to-Trough progowy w std
+params.spikeMNegPeakW  = 150;    % Negatywny Peak i jego długosć 
+params.spikeTrackPeaks = false;   % szukanie od pozytywnego peaku
+params.spikeWindow     = 250;    % ZMargines do drzucenia w okół IED
 
 % Artifact Rejection parameters:
 params.artPadding = 70; % how many samples should we pad the artifacts with

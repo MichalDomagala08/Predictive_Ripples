@@ -1,0 +1,930 @@
+--- 2026-09-28 14:13:27 ---
+
+
+ latency ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Generalized linear mixed-effects model fit by PL</strong>
+
+<strong>Model information:</strong>
+    Number of observations           14686
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+    Distribution                    Gamma 
+    Link                            Log   
+    FitMethod                       MPL   
+
+<strong>Formula:</strong>
+    latency ~ 1 + trial_number + rippleAroundSaccade_bin + (1 | subject_new)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    24599    24637    -12295           24589   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate      SE            tStat   
+    {'(Intercept)'              }            5.6286       0.03278      171.71
+    {'trial_number'             }        0.00053809    0.00020227      2.6602
+    {'rippleAroundSaccade_bin_1'}        -0.0052199      0.012256    -0.42591
+
+
+    DF       pValue      Lower         Upper     
+    14683           0        5.5644        5.6929
+    14683    0.007817    0.00014161    0.00093456
+    14683     0.67018     -0.029243      0.018803
+
+<strong>Random effects covariance parameters:</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        0.13296 
+
+Group: Error
+    Name                        Estimate
+    {'sqrt(Dispersion)'}        0.55761 
+
+
+
+
+ duration ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Generalized linear mixed-effects model fit by PL</strong>
+
+<strong>Model information:</strong>
+    Number of observations           15549
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+    Distribution                    Gamma 
+    Link                            Log   
+    FitMethod                       MPL   
+
+<strong>Formula:</strong>
+    duration ~ 1 + trial_number + rippleAroundSaccade_bin + (1 | subject_new)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    29425    29463    -14707           29415   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate      SE            tStat  
+    {'(Intercept)'              }            3.1875      0.053696     59.362
+    {'trial_number'             }        0.00020644    0.00021843    0.94513
+    {'rippleAroundSaccade_bin_1'}          0.051498      0.013357     3.8555
+
+
+    DF       pValue        Lower         Upper     
+    15546             0        3.0823        3.2928
+    15546       0.34461    -0.0002217    0.00063459
+    15546    0.00011597      0.025317       0.07768
+
+<strong>Random effects covariance parameters:</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        0.22357 
+
+Group: Error
+    Name                        Estimate
+    {'sqrt(Dispersion)'}        0.62141 
+
+
+
+
+ amplitude ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Generalized linear mixed-effects model fit by PL</strong>
+
+<strong>Model information:</strong>
+    Number of observations           14917
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+    Distribution                    Gamma 
+    Link                            Log   
+    FitMethod                       MPL   
+
+<strong>Formula:</strong>
+    amplitude ~ 1 + trial_number + rippleAroundSaccade_bin + (1 | subject_new)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    39583    39621    -19787           39573   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate       SE            tStat    
+    {'(Intercept)'              }            -2.6077      0.050983      -51.149
+    {'trial_number'             }        -2.9928e-05    0.00032616    -0.091757
+    {'rippleAroundSaccade_bin_1'}           0.056097      0.019987       2.8067
+
+
+    DF       pValue       Lower          Upper     
+    14914            0        -2.7076       -2.5078
+    14914      0.92689    -0.00066925    0.00060939
+    14914    0.0050113       0.016921      0.095273
+
+<strong>Random effects covariance parameters:</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        0.20624 
+
+Group: Error
+    Name                        Estimate
+    {'sqrt(Dispersion)'}        0.90962 
+
+
+
+
+ peakVelocity ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Generalized linear mixed-effects model fit by PL</strong>
+
+<strong>Model information:</strong>
+    Number of observations           15166
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+    Distribution                    Gamma 
+    Link                            Log   
+    FitMethod                       MPL   
+
+<strong>Formula:</strong>
+    peakVelocity ~ 1 + trial_number + rippleAroundSaccade_bin + (1 | subject_new)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    29217    29255    -14603           29207   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate      SE            tStat  
+    {'(Intercept)'              }            1.4192      0.045498     31.192
+    {'trial_number'             }        -0.0002373    0.00022501    -1.0546
+    {'rippleAroundSaccade_bin_1'}          0.031248      0.013729      2.276
+
+
+    DF       pValue         Lower          Upper     
+    15163    4.5185e-207           1.33        1.5083
+    15163        0.29163    -0.00067835    0.00020376
+    15163       0.022858      0.0043372      0.058159
+
+<strong>Random effects covariance parameters:</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        0.1877  
+
+Group: Error
+    Name                        Estimate
+    {'sqrt(Dispersion)'}        0.6322  
+
+
+
+
+ Xpx_original ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Generalized linear mixed-effects model fit by PL</strong>
+
+<strong>Model information:</strong>
+    Number of observations           14965
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+    Distribution                    Gamma 
+    Link                            Log   
+    FitMethod                       MPL   
+
+<strong>Formula:</strong>
+    Xpx_original ~ 1 + trial_number + rippleAroundSaccade_bin + (1 | subject_new)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    13190    13228    -6590            13180   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate      SE           tStat  
+    {'(Intercept)'              }            6.2673    0.0096646     648.48
+    {'trial_number'             }        0.00024188    0.0001344     1.7997
+    {'rippleAroundSaccade_bin_1'}          0.006945    0.0082211    0.84478
+
+
+    DF       pValue      Lower          Upper     
+    14962           0         6.2484        6.2862
+    14962    0.071923    -2.1556e-05    0.00050532
+    14962     0.39825     -0.0091694      0.023059
+
+<strong>Random effects covariance parameters:</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        0.030996
+
+Group: Error
+    Name                        Estimate
+    {'sqrt(Dispersion)'}        0.37543 
+
+
+
+
+ Ypx_original ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Generalized linear mixed-effects model fit by PL</strong>
+
+<strong>Model information:</strong>
+    Number of observations           14965
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+    Distribution                    Gamma 
+    Link                            Log   
+    FitMethod                       MPL   
+
+<strong>Formula:</strong>
+    Ypx_original ~ 1 + trial_number + rippleAroundSaccade_bin + (1 | subject_new)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    16736    16774    -8363.1          16726   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate      SE            tStat  
+    {'(Intercept)'              }            5.9082      0.026972     219.05
+    {'trial_number'             }        0.00041501    0.00015136     2.7419
+    {'rippleAroundSaccade_bin_1'}          0.002264     0.0092667    0.24432
+
+
+    DF       pValue       Lower         Upper     
+    14962            0        5.8553        5.9611
+    14962    0.0061157    0.00011833    0.00071169
+    14962      0.80699       -0.0159      0.020428
+
+<strong>Random effects covariance parameters:</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        0.11035 
+
+Group: Error
+    Name                        Estimate
+    {'sqrt(Dispersion)'}        0.42211 
+
+
+
+
+ saccade_onset_time ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Generalized linear mixed-effects model fit by PL</strong>
+
+<strong>Model information:</strong>
+    Number of observations           15580
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+    Distribution                    Gamma 
+    Link                            Log   
+    FitMethod                       MPL   
+
+<strong>Formula:</strong>
+    Linear Mixed Formula with 3 predictors.
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    14916    14954    -7453            14906   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate     SE           tStat   
+    {'(Intercept)'              }           1.2784    0.0063933      199.96
+    {'trial_number'             }         3.58e-06    0.0001362    0.026285
+    {'rippleAroundSaccade_bin_1'}        -0.066576    0.0082166     -8.1027
+
+
+    DF       pValue        Lower          Upper     
+    15577             0         1.2659        1.2909
+    15577       0.97903    -0.00026339    0.00027055
+    15577    5.7701e-16      -0.082682     -0.050471
+
+<strong>Random effects covariance parameters:</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate  
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        2.8445e-43
+
+Group: Error
+    Name                        Estimate
+    {'sqrt(Dispersion)'}        0.3904  
+
+
+
+
+ saccade_offset_time ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Generalized linear mixed-effects model fit by PL</strong>
+
+<strong>Model information:</strong>
+    Number of observations           15580
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+    Distribution                    Gamma 
+    Link                            Log   
+    FitMethod                       MPL   
+
+<strong>Formula:</strong>
+    Linear Mixed Formula with 3 predictors.
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    14686    14724    -7338            14676   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate      SE           tStat   
+    {'(Intercept)'              }            1.2854    0.0063463      202.55
+    {'trial_number'             }        9.5425e-06    0.0001352    0.070582
+    {'rippleAroundSaccade_bin_1'}         -0.065755    0.0081561      -8.062
+
+
+    DF       pValue        Lower          Upper     
+    15577             0          1.273        1.2978
+    15577       0.94373    -0.00025546    0.00027455
+    15577    8.0442e-16      -0.081742     -0.049768
+
+<strong>Random effects covariance parameters:</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate  
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        3.0022e-41
+
+Group: Error
+    Name                        Estimate
+    {'sqrt(Dispersion)'}        0.38753 
+
+
+
+
+ aws_r50px ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Generalized linear mixed-effects model fit by PL</strong>
+
+<strong>Model information:</strong>
+    Number of observations           14965
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+    Distribution                    Gamma 
+    Link                            Log   
+    FitMethod                       MPL   
+
+<strong>Formula:</strong>
+    aws_r50px ~ 1 + trial_number + rippleAroundSaccade_bin + (1 | subject_new)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    22509    22547    -11249           22499   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate       SE            tStat  
+    {'(Intercept)'              }             4.5645      0.022927     199.09
+    {'trial_number'             }        -0.00046473    0.00018359    -2.5314
+    {'rippleAroundSaccade_bin_1'}           0.010807      0.011239    0.96157
+
+
+    DF       pValue      Lower          Upper      
+    14962           0         4.5196         4.6094
+    14962    0.011372    -0.00082458    -0.00010487
+    14962     0.33628      -0.011222       0.032836
+
+<strong>Random effects covariance parameters:</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        0.090073
+
+Group: Error
+    Name                        Estimate
+    {'sqrt(Dispersion)'}        0.51213 
+
+
+
+
+ aws_r50px_diff ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations           14529
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    Linear Mixed Formula with 3 predictors.
+
+<strong>Model fit statistics:</strong>
+    AIC           BIC           LogLikelihood    Deviance  
+    1.5105e+05    1.5109e+05    -75521           1.5104e+05
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate      SE          tStat   
+    {'(Intercept)'              }           0.55094     0.73915     0.74538
+    {'trial_number'             }        -0.0059247    0.015801    -0.37496
+    {'rippleAroundSaccade_bin_1'}          -0.66808     0.95763    -0.69764
+
+
+    DF       pValue     Lower        Upper   
+    14526    0.45605     -0.89788      1.9998
+    14526     0.7077    -0.036896    0.025047
+    14526    0.48541      -2.5452       1.209
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate  
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        1.9439e-14
+
+
+    Lower    Upper
+    NaN      NaN  
+
+Group: Error
+    Name               Estimate    Lower     Upper
+    {'Res Std'}        43.774      43.273    44.28
+
+
+
+
+ lum_r50px ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Generalized linear mixed-effects model fit by PL</strong>
+
+<strong>Model information:</strong>
+    Number of observations           14965
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+    Distribution                    Gamma 
+    Link                            Log   
+    FitMethod                       MPL   
+
+<strong>Formula:</strong>
+    lum_r50px ~ 1 + trial_number + rippleAroundSaccade_bin + (1 | subject_new)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    14946    14984    -7468.1          14936   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate      SE            tStat   
+    {'(Intercept)'              }            4.7249     0.0066421      711.37
+    {'trial_number'             }        -9.618e-05    0.00014172    -0.67865
+    {'rippleAroundSaccade_bin_1'}          0.002309     0.0085823     0.26904
+
+
+    DF       pValue     Lower          Upper     
+    14962          0         4.7119         4.738
+    14962    0.49737    -0.00037398    0.00018162
+    14962     0.7879      -0.014513      0.019131
+
+<strong>Random effects covariance parameters:</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate  
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        7.9527e-26
+
+Group: Error
+    Name                        Estimate
+    {'sqrt(Dispersion)'}        0.39856 
+
+
+
+
+ aws_r20px ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Generalized linear mixed-effects model fit by PL</strong>
+
+<strong>Model information:</strong>
+    Number of observations           14965
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+    Distribution                    Gamma 
+    Link                            Log   
+    FitMethod                       MPL   
+
+<strong>Formula:</strong>
+    aws_r20px ~ 1 + trial_number + rippleAroundSaccade_bin + (1 | subject_new)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    25640    25678    -12815           25630   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate       SE            tStat  
+    {'(Intercept)'              }             4.6049      0.024988     184.28
+    {'trial_number'             }        -0.00055357    0.00020384    -2.7157
+    {'rippleAroundSaccade_bin_1'}          0.0067431      0.012478     0.5404
+
+
+    DF       pValue       Lower          Upper      
+    14962            0         4.5559         4.6539
+    14962    0.0066204    -0.00095312    -0.00015402
+    14962      0.58893      -0.017715       0.031202
+
+<strong>Random effects covariance parameters:</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        0.097866
+
+Group: Error
+    Name                        Estimate
+    {'sqrt(Dispersion)'}        0.56863 
+
+
+
+
+ lum_r20px ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Generalized linear mixed-effects model fit by PL</strong>
+
+<strong>Model information:</strong>
+    Number of observations           14965
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+    Distribution                    Gamma 
+    Link                            Log   
+    FitMethod                       MPL   
+
+<strong>Formula:</strong>
+    lum_r20px ~ 1 + trial_number + rippleAroundSaccade_bin + (1 | subject_new)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    19595    19633    -9792.6          19585   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate       SE            tStat   
+    {'(Intercept)'              }             4.7206     0.0077582      608.47
+    {'trial_number'             }        -3.4619e-05    0.00016554    -0.20913
+    {'rippleAroundSaccade_bin_1'}          0.0053305      0.010024     0.53175
+
+
+    DF       pValue     Lower         Upper     
+    14962          0        4.7054        4.7358
+    14962    0.83435    -0.0003591    0.00028986
+    14962    0.59491     -0.014319       0.02498
+
+<strong>Random effects covariance parameters:</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate  
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        1.5391e-31
+
+Group: Error
+    Name                        Estimate
+    {'sqrt(Dispersion)'}        0.46553 
+
+
+
+
+ aws_r20px_diff ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations           14579
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    Linear Mixed Formula with 3 predictors.
+
+<strong>Model fit statistics:</strong>
+    AIC           BIC          LogLikelihood    Deviance  
+    1.5816e+05    1.582e+05    -79077           1.5815e+05
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate      SE          tStat   
+    {'(Intercept)'              }           0.82236     0.92504       0.889
+    {'trial_number'             }        -0.0078644    0.019762    -0.39795
+    {'rippleAroundSaccade_bin_1'}           -1.3283      1.1982     -1.1086
+
+
+    DF       pValue     Lower        Upper   
+    14576    0.37402     -0.99084      2.6355
+    14576    0.69067    -0.046601    0.030872
+    14576    0.26764      -3.6769      1.0204
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate  
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        1.2185e-14
+
+
+    Lower    Upper
+    NaN      NaN  
+
+Group: Error
+    Name               Estimate    Lower    Upper
+    {'Res Std'}        54.876      54.25    55.51
+
+
+
+
+ lum_r50px_diff ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations           14464
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    Linear Mixed Formula with 3 predictors.
+
+<strong>Model fit statistics:</strong>
+    AIC           BIC           LogLikelihood    Deviance  
+    1.4562e+05    1.4566e+05    -72807           1.4561e+05
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate     SE          tStat   
+    {'(Intercept)'              }          0.12552     0.62823     0.19979
+    {'trial_number'             }        0.0023899    0.013402     0.17832
+    {'rippleAroundSaccade_bin_1'}          -0.5895     0.81511    -0.72321
+
+
+    DF       pValue     Lower        Upper   
+    14461    0.84164      -1.1059      1.3569
+    14461    0.85847    -0.023879    0.028659
+    14461    0.46956      -2.1872      1.0082
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate    Lower
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        0           NaN  
+
+
+    Upper
+    NaN  
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        37.141      36.715    37.571
+
+
+
+
+ lum_r20px_diff ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations           14655
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    Linear Mixed Formula with 3 predictors.
+
+<strong>Model fit statistics:</strong>
+    AIC           BIC           LogLikelihood    Deviance  
+    1.5852e+05    1.5856e+05    -79255           1.5851e+05
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate     SE          tStat   
+    {'(Intercept)'              }         -0.48373     0.90782    -0.53285
+    {'trial_number'             }        0.0099402    0.019381     0.51289
+    {'rippleAroundSaccade_bin_1'}         0.047446      1.1762    0.040338
+
+
+    DF       pValue     Lower        Upper   
+    14652    0.59414      -2.2632      1.2957
+    14652    0.60804    -0.028049    0.047929
+    14652    0.96782      -2.2581       2.353
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate  
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        1.1992e-14
+
+
+    Lower    Upper
+    NaN      NaN  
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        54.006      53.391    54.628
+
+
+
+
+ lum_r20px_diffabs ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations           14526
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    Linear Mixed Formula with 3 predictors.
+
+<strong>Model fit statistics:</strong>
+    AIC           BIC           LogLikelihood    Deviance  
+    1.4399e+05    1.4403e+05    -71989           1.4398e+05
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate     SE          tStat      DF   
+    {'(Intercept)'              }           39.794     0.99532     39.981    14523
+    {'trial_number'             }        -0.021989    0.012453    -1.7657    14523
+    {'rippleAroundSaccade_bin_1'}          0.85926     0.76374     1.1251    14523
+
+
+    pValue     Lower        Upper    
+          0       37.843       41.745
+    0.07746    -0.046398    0.0024207
+    0.26058     -0.63778       2.3563
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        3.4118  
+
+
+    Lower     Upper 
+    2.3266    5.0033
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        34.317      33.924    34.714
+
+
+
+
+ aws_r20px_diffabs ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations           14405
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    Linear Mixed Formula with 3 predictors.
+
+<strong>Model fit statistics:</strong>
+    AIC          BIC           LogLikelihood    Deviance  
+    1.431e+05    1.4314e+05    -71547           1.4309e+05
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate     SE          tStat   
+    {'(Intercept)'              }           40.246      1.0073      39.955
+    {'trial_number'             }        -0.027109    0.012671     -2.1394
+    {'rippleAroundSaccade_bin_1'}         -0.55643     0.77633    -0.71674
+
+
+    DF       pValue      Lower        Upper     
+    14402           0       38.271         42.22
+    14402    0.032419    -0.051947    -0.0022718
+    14402     0.47355      -2.0781       0.96528
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate    Lower
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        3.4458      2.379
+
+
+    Upper 
+    4.9909
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        34.692      34.294    35.096
+
+
+
+
+ aws_r50px_diffabs ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations           14385
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    Linear Mixed Formula with 3 predictors.
+
+<strong>Model fit statistics:</strong>
+    AIC          BIC           LogLikelihood    Deviance  
+    1.368e+05    1.3683e+05    -68393           1.3679e+05
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate     SE          tStat      DF   
+    {'(Intercept)'              }           32.108     0.83829     38.302    14382
+    {'trial_number'             }        -0.024042    0.010256    -2.3441    14382
+    {'rippleAroundSaccade_bin_1'}          0.15071     0.62757    0.24015    14382
+
+
+    pValue         Lower        Upper     
+    9.9344e-306       30.465        33.751
+       0.019087    -0.044146    -0.0039381
+        0.81022      -1.0794        1.3808
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        2.9102  
+
+
+    Lower     Upper 
+    2.0154    4.2022
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        28.054      27.732    28.381
+
+
+
+
+ lum_r50px_diffabs ~ rippleAroundSaccade_bin 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations           14295
+    Fixed effects coefficients           3
+    Random effects coefficients         18
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    Linear Mixed Formula with 3 predictors.
+
+<strong>Model fit statistics:</strong>
+    AIC           BIC           LogLikelihood    Deviance  
+    1.3133e+05    1.3136e+05    -65658           1.3132e+05
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                 Estimate    SE           tStat      DF   
+    {'(Intercept)'              }          26.485      0.75954     34.869    14292
+    {'trial_number'             }        -0.01253    0.0087231    -1.4364    14292
+    {'rippleAroundSaccade_bin_1'}          0.9935      0.53629     1.8525    14292
+
+
+    pValue         Lower        Upper    
+    9.7478e-256       24.996       27.973
+         0.1509    -0.029628    0.0045682
+       0.063969      -0.0577       2.0447
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: subject_new (18 Levels)
+    Name1                  Name2                  Type           Estimate
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        2.7091  
+
+
+    Lower     Upper 
+    1.8786    3.9066
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        23.87       23.595    24.148
+
+
+

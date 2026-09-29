@@ -121,15 +121,12 @@ function [artifacts_byChan,ieds_byChan,iqr_byChan,range_byChan,data_artifact,ied
         % 1.2: MAD on a RAW Signal %
         %--------------------------%
 
-        % --- Globalny Bezpiecznik Amplitudowy (MAD 8) ---
         fprintf('(3.2) MAD Spike Detection ...\n')
         currSignal = norm_concat(chan,:);
         
-        % Używamy MAD, ponieważ STD jest "pompowane" przez artefakty
         chanMedian = median(norm_concat(chan,:), 'omitnan');
         chanMAD    = mad(norm_concat(chan,:), 1); % 1 = skala oparta na medianie
         
-        % Próg MAD 8 jest znacznie stabilniejszy i niższy niż 9 STD w "brudnych" danych
         mad_threshold_pos = chanMedian + params.artif_mad * chanMAD;
         mad_threshold_neg = chanMedian -  params.artif_mad * chanMAD;
         
@@ -145,7 +142,7 @@ function [artifacts_byChan,ieds_byChan,iqr_byChan,range_byChan,data_artifact,ied
         % %------------------------------%
         % % 0: Absolute 750 uV threshold %
         % %------------------------------%
-        % % Wstaw to w func_artifact_rejection_main, per kanał (np. przed sekcją Range)
+        % % OBSOLETE!!! Do NOT USE!!!! WE DO NOT KNOW THE SCALE!!!
         % hardThr = 750e-6;  % 750 µV
         % 
         % amp_bad = find(abs(norm_concat(chan,:)) > hardThr);

@@ -17,8 +17,15 @@ function [data_ripples,data_viz] = func_rippleband_filtering(dataForPreproc,para
         swr_range_all=zeros(size(trial_t));
         for Currchannel = 1:size(dataForPreproc.label,1)
             % Using BandPass Fieldtrip twopass FIR filter for Every Channel
-            swr_range = ft_preproc_bandpassfilter(currentTrial(Currchannel,:),dataForPreproc.fsample ,[params.lowpassfreq,params.highpassfreq],[],'fir','twopass');
-            hilbertComp = abs(hilbert(swr_range)); % computing abs.^2 from Hilber transform
+            try
+                swr_range = ft_preproc_bandpassfilter(currentTrial(Currchannel,:),dataForPreproc.fsample ,[params.lowpassfreq,params.highpassfreq],[],'fir','twopass');
+            catch
+                aaa
+            end
+            hilbertComp = abs(hilbert(swr_range)); % computing abs from Hilber transform
+            if isfield(params,"power")
+                if params.power; hilbertComp = hilbertComp.^2; end
+            end
 
             swr_range_all(Currchannel,:) = swr_range(length(currentTrial_orig):2*length(currentTrial_orig)-1);
             trial_t(Currchannel,:) = hilbertComp(length(currentTrial_orig):2*length(currentTrial_orig)-1);

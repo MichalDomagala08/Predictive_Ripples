@@ -1,0 +1,534 @@
+--- 2026-07-24 10:23:29 ---
+
+
+ MeanSaccAmplitude ~ MeanRippleLength_cleaned 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations            1365
+    Fixed effects coefficients           4
+    Random effects coefficients         19
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    MeanSaccAmplitude ~ 1 + Trial + NumChannels + MeanRippleLength_cleaned + (1 | Subject)
+
+<strong>Model fit statistics:</strong>
+    AIC        BIC        LogLikelihood    Deviance
+    -4920.5    -4889.2    2466.3           -4932.5 
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                Estimate       SE            tStat       DF      pValue        Lower          Upper     
+    {'(Intercept)'             }            0.10154      0.012122       8.376    1361    1.3452e-16       0.077756       0.12532
+    {'Trial'                   }         0.00014252    4.5955e-05      3.1013    1361     0.0019663     5.2371e-05    0.00023267
+    {'NumChannels'             }        -0.00037309     0.0013402    -0.27838    1361       0.78077     -0.0030023     0.0022561
+    {'MeanRippleLength_cleaned'}         0.00013896    0.00045855     0.30304    1361       0.76191    -0.00076059     0.0010385
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: Subject (19 Levels)
+    Name1                  Name2                  Type           Estimate    Lower       Upper   
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        0.019244    0.013574    0.027283
+
+Group: Error
+    Name               Estimate    Lower       Upper   
+    {'Res Std'}        0.038937    0.037493    0.040437
+
+
+
+
+ MeanSaccDuration ~ MeanRippleLength_cleaned 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations            1365
+    Fixed effects coefficients           4
+    Random effects coefficients         19
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    MeanSaccDuration ~ 1 + Trial + NumChannels + MeanRippleLength_cleaned + (1 | Subject)
+
+<strong>Model fit statistics:</strong>
+    AIC       BIC       LogLikelihood    Deviance
+    8573.6    8604.9    -4280.8          8561.6  
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                Estimate      SE           tStat       DF      pValue        Lower        Upper   
+    {'(Intercept)'             }            25.713       2.7207       9.451    1361    1.4107e-20       20.376       31.05
+    {'Trial'                   }        -0.0020188    0.0063815    -0.31636    1361       0.75178    -0.014537      0.0105
+    {'NumChannels'             }           -0.1745      0.36812    -0.47403    1361       0.63556     -0.89665     0.54765
+    {'MeanRippleLength_cleaned'}         -0.038639     0.063845     -0.6052    1361       0.54515     -0.16389    0.086607
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: Subject (19 Levels)
+    Name1                  Name2                  Type           Estimate    Lower     Upper 
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        5.4255      3.9192    7.5109
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        5.4063      5.2059    5.6145
+
+
+
+
+ MeanSaccLatency ~ MeanRippleLength_cleaned 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations            1365
+    Fixed effects coefficients           4
+    Random effects coefficients         19
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    MeanSaccLatency ~ 1 + Trial + NumChannels + MeanRippleLength_cleaned + (1 | Subject)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    19509    19540    -9748.4          19497   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                Estimate    SE         tStat       DF      pValue        Lower       Upper 
+    {'(Intercept)'             }          407.13     85.565      4.7581    1361    2.1624e-06      239.27    574.98
+    {'Trial'                   }         0.38323    0.35451       1.081    1361       0.27988    -0.31221    1.0787
+    {'NumChannels'             }         -3.8485     8.7078    -0.44196    1361       0.65859     -20.931    13.234
+    {'MeanRippleLength_cleaned'}        -0.72213     3.5323    -0.20443    1361       0.83804     -7.6516    6.2073
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: Subject (19 Levels)
+    Name1                  Name2                  Type           Estimate    Lower     Upper
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        123.24      86.349    175.9
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        300.39      289.25    311.96
+
+
+
+
+ MeanSaccVelocity ~ MeanRippleLength_cleaned 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations            1365
+    Fixed effects coefficients           4
+    Random effects coefficients         19
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    MeanSaccVelocity ~ 1 + Trial + NumChannels + MeanRippleLength_cleaned + (1 | Subject)
+
+<strong>Model fit statistics:</strong>
+    AIC       BIC       LogLikelihood    Deviance
+    6967.5    6998.8    -3477.7          6955.5  
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                Estimate     SE           tStat       DF      pValue        Lower        Upper   
+    {'(Intercept)'             }           6.8354       1.0057      6.7967    1361    1.5963e-11       4.8625      8.8083
+    {'Trial'                   }         0.016404    0.0035714      4.5933    1361    4.7673e-06    0.0093984     0.02341
+    {'NumChannels'             }        -0.082922      0.11649    -0.71186    1361       0.47667     -0.31143     0.14559
+    {'MeanRippleLength_cleaned'}        0.0040153     0.035662      0.1126    1361       0.91037    -0.065942    0.073973
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: Subject (19 Levels)
+    Name1                  Name2                  Type           Estimate    Lower     Upper 
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        1.6844      1.2051    2.3544
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        3.0259      2.9137    3.1424
+
+
+
+
+ SaccNumber ~ MeanRippleLength_cleaned 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations            1393
+    Fixed effects coefficients           4
+    Random effects coefficients         19
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    SaccNumber ~ 1 + Trial + NumChannels + MeanRippleLength_cleaned + (1 | Subject)
+
+<strong>Model fit statistics:</strong>
+    AIC       BIC       LogLikelihood    Deviance
+    8302.8    8334.2    -4145.4          8290.8  
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                Estimate     SE           tStat      DF      pValue        Lower        Upper    
+    {'(Intercept)'             }             16.5       2.1438     7.6966    1389    2.6375e-14       12.294       20.705
+    {'Trial'                   }        -0.029462    0.0053808    -5.4754    1389    5.1735e-08    -0.040018    -0.018907
+    {'NumChannels'             }          0.15384      0.28551    0.53884    1389       0.59008     -0.40623      0.71392
+    {'MeanRippleLength_cleaned'}         0.020121     0.054056    0.37223    1389       0.70978    -0.085919      0.12616
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: Subject (19 Levels)
+    Name1                  Name2                  Type           Estimate    Lower     Upper 
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        4.2011      3.0386    5.8084
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        4.6139      4.4445    4.7896
+
+
+
+
+ TotalRippleNumber_cleaned ~ MeanRippleLength_cleaned 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations            1393
+    Fixed effects coefficients           4
+    Random effects coefficients         19
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    TotalRippleNumber_cleaned ~ 1 + Trial + NumChannels + MeanRippleLength_cleaned + (1 | Subject)
+
+<strong>Model fit statistics:</strong>
+    AIC       BIC       LogLikelihood    Deviance
+    2934.5    2965.9    -1461.3          2922.5  
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                Estimate     SE            tStat       DF      pValue        Lower          Upper    
+    {'(Intercept)'             }           0.5743       0.20369      2.8194    1389     0.0048792        0.17472      0.97388
+    {'Trial'                   }        0.0012022    0.00079036       1.521    1389       0.12848    -0.00034825    0.0027526
+    {'NumChannels'             }        -0.019913      0.022049    -0.90308    1389       0.36664      -0.063166     0.023341
+    {'MeanRippleLength_cleaned'}         0.048284     0.0079174      6.0984    1389    1.3859e-09       0.032752     0.063815
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: Subject (19 Levels)
+    Name1                  Name2                  Type           Estimate    Lower      Upper  
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        0.31554     0.22479    0.44293
+
+Group: Error
+    Name               Estimate    Lower      Upper  
+    {'Res Std'}        0.67773     0.65286    0.70355
+
+
+
+
+ X_mean ~ MeanRippleLength_cleaned 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations            1364
+    Fixed effects coefficients           4
+    Random effects coefficients         19
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    X_mean ~ 1 + Trial + NumChannels + MeanRippleLength_cleaned + (1 | Subject)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    15544    15576    -7766.2          15532   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                Estimate    SE          tStat      DF      pValue         Lower       Upper  
+    {'(Intercept)'             }          529.95       16.83     31.488    1360    6.4916e-164      496.94     562.97
+    {'Trial'                   }         0.18379    0.083907     2.1904    1360       0.028665    0.019188    0.34839
+    {'NumChannels'             }         0.72488      1.2504    0.57972    1360         0.5622      -1.728     3.1778
+    {'MeanRippleLength_cleaned'}        -0.85157     0.82929    -1.0269    1360        0.30467     -2.4784    0.77526
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: Subject (19 Levels)
+    Name1                  Name2                  Type           Estimate    Lower     Upper 
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        16.194      10.838    24.199
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        71.102      68.466    73.839
+
+
+
+
+ X_std ~ MeanRippleLength_cleaned 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations            1364
+    Fixed effects coefficients           4
+    Random effects coefficients         19
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    X_std ~ 1 + Trial + NumChannels + MeanRippleLength_cleaned + (1 | Subject)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    15272    15304    -7630.2          15260   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                Estimate     SE          tStat     DF      pValue       Lower        Upper   
+    {'(Intercept)'             }           111.35      19.345    5.7562    1360    1.062e-08       73.405       149.3
+    {'Trial'                   }        -0.072906    0.075317    -0.968    1360      0.33322     -0.22066    0.074843
+    {'NumChannels'             }           4.1087      2.0921    1.9639    1360     0.049745    0.0045897      8.2128
+    {'MeanRippleLength_cleaned'}          0.77376     0.75119      1.03    1360      0.30318     -0.69987      2.2474
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: Subject (19 Levels)
+    Name1                  Name2                  Type           Estimate    Lower     Upper 
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        29.932      21.364    41.936
+
+Group: Error
+    Name               Estimate    Lower    Upper 
+    {'Res Std'}        63.795      61.43    66.252
+
+
+
+
+ Y_mean ~ MeanRippleLength_cleaned 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations            1364
+    Fixed effects coefficients           4
+    Random effects coefficients         19
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    Y_mean ~ 1 + Trial + NumChannels + MeanRippleLength_cleaned + (1 | Subject)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    15495    15526    -7741.5          15483   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                Estimate    SE          tStat      DF      pValue        Lower        Upper  
+    {'(Intercept)'             }         355.26       26.094     13.615    1360    1.1456e-39       304.07     406.45
+    {'Trial'                   }        0.15065     0.081315     1.8527    1360      0.064145    -0.008866    0.31017
+    {'NumChannels'             }         2.6291       3.2381    0.81194    1360       0.41697       -3.723     8.9813
+    {'MeanRippleLength_cleaned'}        0.14392      0.81264     0.1771    1360       0.85946      -1.4502     1.7381
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: Subject (19 Levels)
+    Name1                  Name2                  Type           Estimate    Lower     Upper 
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        47.256      33.781    66.108
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        68.87       66.315    71.523
+
+
+
+
+ Y_std ~ MeanRippleLength_cleaned 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations            1364
+    Fixed effects coefficients           4
+    Random effects coefficients         19
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    Y_std ~ 1 + Trial + NumChannels + MeanRippleLength_cleaned + (1 | Subject)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    14438    14470    -7213.1          14426   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                Estimate      SE          tStat        DF      pValue        Lower       Upper  
+    {'(Intercept)'             }            109.12          15       7.2747    1360    5.8436e-13      79.694     138.54
+    {'Trial'                   }        -0.0044919    0.055401    -0.081079    1360       0.93539    -0.11317    0.10419
+    {'NumChannels'             }            2.1611      1.6915       1.2776    1360       0.20161     -1.1572     5.4793
+    {'MeanRippleLength_cleaned'}          -0.36375     0.55293     -0.65786    1360       0.51074     -1.4484    0.72093
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: Subject (19 Levels)
+    Name1                  Name2                  Type           Estimate    Lower     Upper 
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        24.363      17.443    34.028
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        46.925      45.185    48.732
+
+
+
+
+ aws50px_mean ~ MeanRippleLength_cleaned 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations            1364
+    Fixed effects coefficients           4
+    Random effects coefficients         19
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    aws50px_mean ~ 1 + Trial + NumChannels + MeanRippleLength_cleaned + (1 | Subject)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    13089    13121    -6538.6          13077   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                Estimate    SE          tStat      DF      pValue        Lower       Upper   
+    {'(Intercept)'             }          106.76      6.7995     15.701    1360    3.4882e-51      93.422       120.1
+    {'Trial'                   }        -0.04359    0.034124    -1.2774    1360       0.20168    -0.11053    0.023352
+    {'NumChannels'             }         -0.6408     0.49635     -1.291    1360       0.19692     -1.6145     0.33291
+    {'MeanRippleLength_cleaned'}        -0.36857     0.33706    -1.0935    1360       0.27437     -1.0298     0.29264
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: Subject (19 Levels)
+    Name1                  Name2                  Type           Estimate    Lower     Upper 
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        6.3814      4.1985    9.6992
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        28.917      27.845    30.031
+
+
+
+
+ aws50px_std ~ MeanRippleLength_cleaned 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations            1364
+    Fixed effects coefficients           4
+    Random effects coefficients         19
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    aws50px_std ~ 1 + Trial + NumChannels + MeanRippleLength_cleaned + (1 | Subject)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    11065    11096    -5526.5          11053   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                Estimate     SE          tStat        DF      pValue        Lower        Upper   
+    {'(Intercept)'             }           38.788      3.3087       11.723    1360    2.6357e-30       32.298      45.279
+    {'Trial'                   }        -0.047482    0.016232      -2.9252    1360      0.003499    -0.079324    -0.01564
+    {'NumChannels'             }         0.071159     0.25592      0.27805    1360       0.78101     -0.43087     0.57319
+    {'MeanRippleLength_cleaned'}        -0.014642     0.16064    -0.091151    1360       0.92739     -0.32977     0.30048
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: Subject (19 Levels)
+    Name1                  Name2                  Type           Estimate    Lower     Upper 
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        3.3665      2.2673    4.9988
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        13.754      13.244    14.283
+
+
+
+
+ lum50px_mean ~ MeanRippleLength_cleaned 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations            1364
+    Fixed effects coefficients           4
+    Random effects coefficients         19
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    lum50px_mean ~ 1 + Trial + NumChannels + MeanRippleLength_cleaned + (1 | Subject)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    13181    13212    -6584.5          13169   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                Estimate       SE          tStat        DF      pValue        Lower        Upper   
+    {'(Intercept)'             }             115.19      6.1074       18.862    1360    1.1276e-70       103.21      127.18
+    {'Trial'                   }        -0.00080216    0.035593    -0.022537    1360       0.98202    -0.070625    0.069021
+    {'NumChannels'             }            -0.4115     0.24602      -1.6726    1360      0.094634     -0.89412    0.071124
+    {'MeanRippleLength_cleaned'}          -0.049659     0.33739     -0.14719    1360       0.88301     -0.71153     0.61221
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: Subject (19 Levels)
+    Name1                  Name2                  Type           Estimate      Lower    Upper
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        6.7094e-15    NaN      NaN  
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        30.216      29.103    31.372
+
+
+
+
+ lum50px_std ~ MeanRippleLength_cleaned 
+ -----------------------------
+
+ 
+<strong>Linear mixed-effects model fit by ML</strong>
+
+<strong>Model information:</strong>
+    Number of observations            1364
+    Fixed effects coefficients           4
+    Random effects coefficients         19
+    Covariance parameters                2
+
+<strong>Formula:</strong>
+    lum50px_std ~ 1 + Trial + NumChannels + MeanRippleLength_cleaned + (1 | Subject)
+
+<strong>Model fit statistics:</strong>
+    AIC      BIC      LogLikelihood    Deviance
+    10849    10880    -5418.6          10837   
+
+<strong>Fixed effects coefficients (95% CIs):</strong>
+    Name                                Estimate     SE          tStat       DF      pValue        Lower        Upper     
+    {'(Intercept)'             }           32.047      3.0264      10.589    1360    3.1096e-25        26.11        37.984
+    {'Trial'                   }        -0.036116    0.015004     -2.4072    1360      0.016209    -0.065549    -0.0066836
+    {'NumChannels'             }          0.23193     0.22811      1.0167    1360       0.30945     -0.21555       0.67941
+    {'MeanRippleLength_cleaned'}        -0.089715     0.14836    -0.60471    1360       0.54547     -0.38075       0.20132
+
+<strong>Random effects covariance parameters (95% CIs):</strong>
+Group: Subject (19 Levels)
+    Name1                  Name2                  Type           Estimate    Lower     Upper 
+    {'(Intercept)'}        {'(Intercept)'}        {'std'}        2.9715      1.9867    4.4444
+
+Group: Error
+    Name               Estimate    Lower     Upper 
+    {'Res Std'}        12.714      12.242    13.203
+
+
+
